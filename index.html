@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hola Mundo Chevere</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: white;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 4rem;
+      text-transform: uppercase;
+      letter-spacing: 8px;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.7),
+                     0 0 20px #fff,
+                     0 0 30px #6a11cb,
+                     0 0 40px #2575fc;
+        transform: scale(1);
+      }
+      50% {
+        text-shadow: 0 0 20px #fff,
+                     0 0 30px #6a11cb,
+                     0 0 40px #2575fc,
+                     0 0 50px #2575fc;
+        transform: scale(1.05);
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Hola Mundo</h1>
+</body>
+</html>
